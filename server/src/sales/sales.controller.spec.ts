@@ -60,4 +60,8 @@ describe('SalesController', () => {
         updatedAt: CREATE_RESULT.updatedAt.toISOString(),
       });
   });
+
+  afterAll(async () => {
+    await app.close();
+  });
 });
